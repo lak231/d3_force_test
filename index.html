@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="./mock_database/people.js"></script>
+    <script src="./mock_database/rel_code.js"></script>
+    <script src="./mock_database/rel_data.js"></script>
+    <script src="./mock_database/role_code.js"></script>
+    <script src="./script.js"></script>
+</head>
+
+<body>
+<div class="search-container">
+        <input id='searchTerm' type="text" placeholder="Search.." name="search">
+        <button onclick="nameSearch()">Submit</button>
+</div>
+
+<h1>Current node:</h1>
+<h3 id="curr_node">N/A</h3>
+<h1>Next node:</h1>
+<div id="next_node">
+    <h3 id="next_node_title">N/A</h3>
+    <p id="next_node_desc"></p>
+    <div id="next_node_button_container"></div>
+</div>
+
+<div>
+<svg width="400" height="400">
+</svg>
+</div>
+</body>
+</html>
